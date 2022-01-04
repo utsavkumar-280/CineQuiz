@@ -1,9 +1,20 @@
-import styles from "../styles/Header.module.css";
+import Link from "next/link";
 
 const Header = () => {
 	return (
-		<div className={styles.head_container}>
-			<h1>Hello </h1>
+		<div className=" w-full h-16 flex justify-center sm:h-20 ">
+			<nav className=" w-full border-b mx-3 flex  justify-between items-center h-full sm:w-10/12 md:w-9/12 lg:w-8/12">
+				<Link href="/">
+					<a className=" text-green-400 text-2xl font-black  sm:text-3xl">
+						CineQuiz
+					</a>
+				</Link>
+				<Link href="/dashboard">
+					<a className="text-neutral-300 text-sm hover:text-green-400 smer:text-base md:text-lg">
+						Dashboard
+					</a>
+				</Link>
+			</nav>
 		</div>
 	);
 };
