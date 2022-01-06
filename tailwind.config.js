@@ -13,6 +13,7 @@ module.exports = {
 
 			colors: {
 				themeBg: "#051c25",
+				themeCard: "#142a33",
 			},
 		},
 		screens: {
