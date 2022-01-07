@@ -23,3 +23,21 @@ a {
 	padding: 0;
 	margin: 0;
 }
+
+::-webkit-scrollbar {
+	width: 0.95rem;
+}
+
+::-webkit-scrollbar-track {
+	border: 0.125rem solid #051c25;
+	background-color: #051c25;
+}
+::-webkit-scrollbar-thumb {
+	background: #142a33;
+	border: 0.25rem solid #051c25;
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #4ade80;
+}
