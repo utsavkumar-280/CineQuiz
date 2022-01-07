@@ -5,7 +5,8 @@ import Layout from "../../components/Layout";
 const Quiz = () => {
 	const router = useRouter();
 	const { quizId } = router.query;
-	console.log(quizId);
+
+	console.log(router);
 	return (
 		<Layout>
 			<Seo title={`Quiz ${quizId}`} />

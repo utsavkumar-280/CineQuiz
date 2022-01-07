@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 							<div key={index}>
 								<Link href={`?cat=${encodeURI(cat)}`}>
 									<a
-										className={`mx-1 px-6 py-1 my-[5px]  text-[16.25px]   text-gray-500 border border-gray-500 rounded-full  flex justify-center items-center whitespace-nowrap  font-medium transition-all ease duration-[250ms] hover:text-green-400 hover:border-green-400 ${
+										className={`mx-1 px-6 py-1 my-[5px]  text-[16.25px]   text-gray-500 border border-gray-700 rounded-full  flex justify-center items-center whitespace-nowrap  font-medium transition-all ease duration-[250ms] hover:text-green-400 hover:border-green-400 ${
 											searchedCategory === cat
 												? "text-green-400 border-green-400 px-8"
 												: ""
