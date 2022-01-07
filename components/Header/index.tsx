@@ -6,7 +6,7 @@ const Header = () => {
 
 	const isDashboard = asPath === "/dashboard";
 	return (
-		<div className=" w-full h-16 flex justify-center border-b border-gray-800 sm:h-20 transition-all ease duration-300">
+		<div className=" w-full h-16 flex justify-center border-b border-gray-800 sm:h-20 transition-all ease duration-[250ms]">
 			<nav className=" w-full flex justify-between items-center h-full ">
 				<Link href="/">
 					<a className=" text-green-400 italic text-3xl font-black  md:text-4xl">
@@ -15,7 +15,7 @@ const Header = () => {
 				</Link>
 				<Link href="/dashboard">
 					<a
-						className={`text-base font-mediumhover:text-green-400 md:text-lg hover:text-green-400 transition-all ease duration-300 ${
+						className={`text-base font-mediumhover:text-green-400 md:text-lg hover:text-green-400 transition-all ease duration-[250ms] ${
 							isDashboard ? "text-green-400" : "text-neutral-300"
 						}`}
 					>
