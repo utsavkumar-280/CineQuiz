@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 		<Layout>
 			<Seo title={`Home`} />
 			<main className="w-full grow flex flex-col">
-				<div className="w-full h-16 flex items-center">
+				<div className="w-full bg-themeBg h-16 flex items-center z-10 sticky top-16 sm:top-20">
 					<nav className="w-full flex justify-start sm:justify-center flex-nowrap overflow-x-auto whitespace-nowrap tracking-wide">
 						{categories.map((cat, index) => (
 							<div key={index}>

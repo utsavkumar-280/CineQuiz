@@ -6,7 +6,7 @@ const Header = () => {
 
 	const isDashboard = asPath === "/dashboard";
 	return (
-		<div className=" w-full h-16 flex justify-center border-b border-gray-800 sm:h-20 transition-all ease duration-[250ms]">
+		<div className=" w-full h-16 sticky top-0 z-10 flex justify-center bg-themeBg border-b border-gray-800 sm:h-20 transition-all ease duration-[250ms] ">
 			<nav className=" w-full flex justify-between items-center h-full ">
 				<Link href="/">
 					<a className=" text-green-400 italic text-3xl font-black  md:text-4xl">
