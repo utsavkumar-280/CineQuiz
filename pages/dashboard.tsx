@@ -16,10 +16,10 @@ const Dashboard = () => {
 					</button>
 				</section>
 				<section className="grow w-full xl:w-9/12 lg:w-10/12 flex flex-col items-center">
-					<Dashboard />
-					<Dashboard />
-					<Dashboard />
-					<Dashboard />
+					<DashboardCard />
+					<DashboardCard />
+					<DashboardCard />
+					<DashboardCard />
 				</section>
 			</main>
 		</Layout>
