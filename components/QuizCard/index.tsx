@@ -32,7 +32,7 @@ const QuizCard = () => {
 							10 questions
 						</p>
 						<p className=" text-green-400">
-							+10 <span className=" text-red-400 ml-1">-5</span>
+							+10 <span className=" text-red-500 ml-1">-5</span>
 						</p>
 					</div>
 				</div>
