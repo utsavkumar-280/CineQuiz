@@ -1,18 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Link from "next/link";
+import useNextBlurhash from "use-next-blurhash";
 import Hp from "../../public/assets/HPotter.jpg";
 
 const QuizCard = () => {
+	const [blurDataUrl] = useNextBlurhash("L8BydJrW4:IU*0n4S5Ri0*XA-6sS", 10, 10);
+
 	return (
 		<Link href="/quizes/1">
 			<a className="mb-4 group bg-themeCard rounded-xl sm:flex sm:w-11/12 sm:h-64  xl:w-5/6  hover:shadow-md hover:shadow-green-400/10 transition-all ease duration-[250ms]">
 				<div className="relative w-full h-96 sm:w-4/12 sm:h-full  lg:w-4/12 2xl:w-3/12">
 					<Image
-						src={Hp}
+						src={`https://i.postimg.cc/rpTZfXYG/HPotter.jpg`}
 						alt="quiz-img"
 						layout="fill"
 						objectFit="cover"
+						placeholder="blur"
+						blurDataURL={blurDataUrl}
 						className="rounded-t-xl sm:rounded-l-xl sm:rounded-r-none"
 					/>
 				</div>

@@ -21,8 +21,8 @@ const DashboardCard = () => {
 						: "text-neutral-100 bg-red-600"
 				}    rounded-full `}
 			>
-				<p className="pr-1 pl-3">40</p>
-				<p className="pl-2 pr-3">Fail</p>
+				<p className="pr-1 pl-3">40/100</p>
+				<p className="pl-2 pr-3">Failed</p>
 			</div>
 		</div>
 	);
