@@ -38,12 +38,15 @@ const Home: NextPage = () => {
 				</div>
 
 				<div className="grow px-9 flex flex-col items-center">
-					<QuizCard />
-					<QuizCard />
-					<QuizCard />
-					<QuizCard />
-					<QuizCard />
-					<QuizCard />
+					<QuizCard imgUrl={`https://i.postimg.cc/3wWYJGYb/LORings.jpg`} />
+					<QuizCard imgUrl={`https://i.postimg.cc/6QCzZjW7/GOT.jpg`} />
+					<QuizCard imgUrl={`https://i.postimg.cc/rpTZfXYG/HPotter.jpg`} />
+					<QuizCard imgUrl={`https://i.postimg.cc/y6SyQ8cc/StarWars.jpg`} />
+					<QuizCard imgUrl={`https://i.postimg.cc/8PZcLhcH/The-Office.jpg`} />
+					<QuizCard imgUrl={`https://i.postimg.cc/BbqYfWx2/Sacred-Games.jpg`} />
+					<QuizCard imgUrl={`https://i.postimg.cc/4dK21Cz5/director.jpg`} />
+					<QuizCard imgUrl={`https://i.postimg.cc/t4v41PDx/bollywood.jpg`} />
+					<QuizCard imgUrl={`https://i.postimg.cc/NFpJxgK5/amitabh.jpg`} />
 				</div>
 			</main>
 		</Layout>

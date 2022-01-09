@@ -4,13 +4,13 @@ import Link from "next/link";
 
 import Hp from "../../public/assets/HPotter.jpg";
 
-const QuizCard = () => {
+const QuizCard = ({ imgUrl }: { imgUrl: string }) => {
 	return (
 		<Link href="/quizes/1">
 			<a className="mb-4 group bg-themeCard rounded-xl sm:flex sm:w-11/12 sm:h-64  xl:w-5/6  hover:shadow-md hover:shadow-green-400/10 transition-all ease duration-[250ms]">
 				<div className="relative w-full h-96 sm:w-4/12 sm:h-full  lg:w-4/12 2xl:w-3/12">
 					<Image
-						src={`https://i.postimg.cc/rpTZfXYG/HPotter.jpg`}
+						src={imgUrl}
 						alt="quiz-img"
 						layout="fill"
 						objectFit="cover"
