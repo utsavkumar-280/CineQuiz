@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Link from "next/link";
 
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
@@ -45,7 +46,12 @@ const Dashboard = () => {
 						</section>
 					</>
 				) : (
-					<div>No previous Attempts</div>
+					<section className="w-full grow flex flex-col items-center justify-center text-gray-300 mb-40">
+						<h1 className=" text-2xl font-bold">No Previous Attempts</h1>
+						<Link href={`/`}>
+							<a className=" text-green-400"> Checkout these quizzes.</a>
+						</Link>
+					</section>
 				)}
 			</main>
 		</Layout>
