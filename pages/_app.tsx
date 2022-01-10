@@ -1,10 +1,13 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import { QuizDataProvider } from "../contexts/QuizDataProvider";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
-			<Component {...pageProps} />
+			<QuizDataProvider>
+				<Component {...pageProps} />
+			</QuizDataProvider>
 		</>
 	);
 }
