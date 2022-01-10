@@ -27,7 +27,7 @@ export const quizReducer = (
 				(quiz) => quiz._id === quizId
 			) as Quiz;
 
-			selectedQuiz.questions.forEach(
+			selectedQuiz?.questions?.forEach(
 				(question) => (question.selectedOptionId = null)
 			);
 
@@ -93,19 +93,25 @@ export const quizReducer = (
 				score: action.payload.score,
 			};
 
-			localStorage.setItem(
-				"dashboard",
-				JSON.stringify({
-					previouslyAttempted: [...state.previousAttempts, attemptedQuiz],
-				})
-			);
-
 			if (state.previousAttempts) {
+				localStorage.setItem(
+					"dashboard",
+					JSON.stringify({
+						previouslyAttempted: [...state.previousAttempts, attemptedQuiz],
+					})
+				);
 				return {
 					...state,
 					previousAttempts: [...state.previousAttempts, attemptedQuiz],
 				};
 			}
+
+			localStorage.setItem(
+				"dashboard",
+				JSON.stringify({
+					previouslyAttempted: [attemptedQuiz],
+				})
+			);
 			return {
 				...state,
 				previousAttempts: [attemptedQuiz],
