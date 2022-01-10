@@ -15,7 +15,6 @@ import {
 	setSelectedOption,
 	enableClick,
 	disableClick,
-	addAttemptedQuiz,
 } from "../../reducers/quiz.reducer";
 
 const Quiz = () => {
@@ -133,14 +132,3 @@ const Quiz = () => {
 };
 
 export default Quiz;
-
-/*
-<button className="w-full sm:text-lg font-medium tracking-wide p-5 mb-4 rounded-2xl bg-themeCard text-gray-200">
-									Harry
-								</button>
-								<button className="w-full sm:text-lg font-medium tracking-wid p-5 mb-4 rounded-2xl bg-green-600 text-gray-200">
-									Ronald
-								</button>
-								<button className="w-full sm:text-lg font-medium tracking-wid p-5 mb-4 rounded-2xl bg-red-600 text-gray-200">
-									Harmione
-								</button> */
