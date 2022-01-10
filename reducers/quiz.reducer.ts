@@ -2,7 +2,7 @@ import { v4 as uuid } from "uuid";
 import { Quiz } from "../utils";
 import { Attempts, QuizState, QuizAction } from "./reducer.types";
 
-export const initialState: QuizState = {
+export const quizInitialState: QuizState = {
 	quizzes: null,
 	active: {
 		quiz: null,
@@ -10,7 +10,7 @@ export const initialState: QuizState = {
 		score: 0,
 	},
 	isClickEnabled: true,
-	previousAttempts: null,
+	previousAttempts: [],
 };
 
 export const quizReducer = (
@@ -87,38 +87,55 @@ export const quizReducer = (
 			};
 
 		case "ADD_ATTEMPTED_QUIZ":
-			const dashboard = localStorage.getItem("dashboard");
 			const attemptedQuiz = {
 				_id: uuid(),
 				quiz: action.payload.activeQuiz,
 				score: action.payload.score,
 			};
 
-			if (dashboard) {
-				let { previousAttempts } = JSON.parse(dashboard);
-				previousAttempts = [...previousAttempts, attemptedQuiz];
+			localStorage.setItem(
+				"dashboard",
+				JSON.stringify({
+					previouslyAttempted: [...state.previousAttempts, attemptedQuiz],
+				})
+			);
 
-				localStorage.setItem("dashboard", JSON.stringify({ previousAttempts }));
-			} else {
-				localStorage.setItem(
-					"dashboard",
-					JSON.stringify({ previousAttempts: [attemptedQuiz] })
-				);
+			if (state.previousAttempts) {
+				return {
+					...state,
+					previousAttempts: [...state.previousAttempts, attemptedQuiz],
+				};
 			}
 			return {
 				...state,
-				previousAttempts: [
-					...(state.previousAttempts as Attempts[]),
-					attemptedQuiz,
-				],
+				previousAttempts: [attemptedQuiz],
 			};
 
 		case "CLEAR_ALL_PREVIOUS_ATTEMPTS":
-			const savedDashboard = localStorage.getItem("dashboard");
-			if (savedDashboard) {
-				localStorage.removeItem("dashboard");
+			if (typeof window !== "undefined") {
+				const savedDashboard = localStorage.getItem("dashboard");
+				if (savedDashboard) {
+					localStorage.removeItem("dashboard");
+				}
 			}
-			return { ...state, previousAttempts: null };
+
+			return { ...state, previousAttempts: [] };
+
+		case "SET_PREVIOUS_ATTEMPTS":
+			if (typeof window !== "undefined") {
+				const localDashboard = localStorage.getItem("dashboard");
+				console.log({ localDashboard });
+
+				const { previouslyAttempted }: { previouslyAttempted: Attempts[] } =
+					localDashboard ? JSON.parse(localDashboard) : [];
+				return { ...state, previousAttempts: previouslyAttempted };
+			}
+		case "RESET_QUIZ_STATE":
+			return {
+				...quizInitialState,
+				quizzes: state.quizzes,
+				previousAttempts: state.previousAttempts,
+			};
 
 		default:
 			return state;
@@ -127,44 +144,48 @@ export const quizReducer = (
 
 //action creators
 
-export const initAllQuizzes = ({ quizzes }: { quizzes: Quiz[] }) => ({
+export const initAllQuizzes = ({
+	quizzes,
+}: {
+	quizzes: Quiz[];
+}): QuizAction => ({
 	type: "INIT_ALL_QUIZZES",
 	payload: {
 		quizzes,
 	},
 });
 
-export const initActiveQuiz = ({ quizId }: { quizId: string }) => ({
+export const initActiveQuiz = ({ quizId }: { quizId: string }): QuizAction => ({
 	type: "INIT_ACTIVE_QUIZ",
 	payload: { quizId },
 });
 
-export const setSelectedOptionId = ({
+export const setSelectedOption = ({
 	optionId,
 	questionId,
 }: {
 	optionId: string;
 	questionId: string;
-}) => ({
+}): QuizAction => ({
 	type: "SET_SELECTED_OPTION_ID",
 	payload: { optionId, questionId },
 });
 
-export const incScore = ({ score }: { score: number }) => ({
+export const incScore = ({ score }: { score: number }): QuizAction => ({
 	type: "INC_SCORE",
 	payload: { score },
 });
 
-export const decScore = ({ score }: { score: number }) => ({
+export const decScore = ({ score }: { score: number }): QuizAction => ({
 	type: "DEC_SCORE",
 	payload: { score },
 });
 
-export const incQuestionNo = () => ({ type: "INC_QUESTION_NO" });
+export const incQuestionNo = (): QuizAction => ({ type: "INC_QUESTION_NO" });
 
-export const enableClick = () => ({ type: "ENABLE_CLICK" });
+export const enableClick = (): QuizAction => ({ type: "ENABLE_CLICK" });
 
-export const disableClick = () => ({ type: "DISABLE_CLICK" });
+export const disableClick = (): QuizAction => ({ type: "DISABLE_CLICK" });
 
 export const addAttemptedQuiz = ({
 	activeQuiz,
@@ -172,11 +193,17 @@ export const addAttemptedQuiz = ({
 }: {
 	activeQuiz: Quiz;
 	score: number;
-}) => ({
+}): QuizAction => ({
 	type: "ADD_ATTEMPTED_QUIZ",
 	payload: { activeQuiz, score },
 });
 
-export const clearAllPreviousAttempts = () => ({
+export const clearAllPreviousAttempts = (): QuizAction => ({
 	type: "CLEAR_ALL_PREVIOUS_ATTEMPTS",
 });
+
+export const setPreviousAttempts = (): QuizAction => ({
+	type: "SET_PREVIOUS_ATTEMPTS",
+});
+
+export const resetQuizState = (): QuizAction => ({ type: "RESET_QUIZ_STATE" });
