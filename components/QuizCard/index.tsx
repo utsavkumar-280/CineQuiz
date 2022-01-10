@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Quiz } from "../../utils";
 const QuizCard = ({ quiz }: { quiz: Quiz }) => {
 	return (
-		<Link href={`/quizes/${quiz._id}`}>
+		<Link href={`/quiz?quizid=${encodeURI(quiz._id)}`}>
 			<a className="w-full mb-4 group bg-themeCard rounded-xl sm:flex sm:w-11/12 sm:h-64  xl:w-5/6  hover:shadow-md hover:shadow-green-400/10 transition-all ease duration-[250ms]">
 				<div className="relative w-full h-96 sm:w-4/12 sm:h-full  lg:w-4/12 2xl:w-3/12">
 					<Image

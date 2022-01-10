@@ -7,18 +7,20 @@ import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import QuizCard from "../components/QuizCard";
-import { categories } from "../utils/data";
 
+import { categories } from "../utils/data";
+import { Quiz } from "../utils";
 import { useQuizData } from "../contexts/QuizDataProvider";
 import { resetQuizState } from "../reducers/quiz.reducer";
 
-const Home: NextPage = () => {
+const Home = ({ quizzes }: { quizzes: Quiz[] }) => {
 	const router = useRouter();
 	const searchedCategory = router?.query?.cat || "All";
 
 	const { state, dispatch } = useQuizData();
 	console.log({ state });
 
+	//console.log(searchedCategory);
 	useEffect(() => {
 		dispatch(resetQuizState());
 	}, [dispatch]);
@@ -48,8 +50,8 @@ const Home: NextPage = () => {
 
 				<div className="grow px-9 flex flex-col items-center">
 					{searchedCategory === "All"
-						? state.quizzes?.map((q) => <QuizCard quiz={q} key={q._id} />)
-						: state.quizzes
+						? quizzes?.map((q) => <QuizCard quiz={q} key={q._id} />)
+						: quizzes
 								?.filter((quiz) => quiz.category === searchedCategory)
 								.map((q) => <QuizCard quiz={q} key={q._id} />)}
 				</div>
@@ -59,3 +61,16 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export const getStaticProps = async () => {
+	const response = await fetch("https://cine-insta.herokuapp.com/quizzes");
+	if (response.status === 200) {
+		const data = await response.json();
+		return {
+			props: {
+				quizzes: data.response,
+			},
+			revalidate: 10,
+		};
+	}
+};

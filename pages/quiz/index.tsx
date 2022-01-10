@@ -19,12 +19,13 @@ import {
 
 const Quiz = () => {
 	const router = useRouter();
-	const { quizID } = router.query;
+	const { quizid } = router.query;
 
 	const {
 		state: {
 			active: { quiz, questionNo, score },
 			isClickEnabled,
+			quizzes,
 		},
 		dispatch,
 	} = useQuizData();
@@ -61,14 +62,17 @@ const Quiz = () => {
 		}, 1000);
 	};
 
+	console.log({ quizid, quiz, currentActiveQuestion, quizzes });
+
 	useEffect(() => {
-		dispatch(initActiveQuiz({ quizId: quizID as string }));
-		return () => {};
-	}, [dispatch, quizID]);
+		if (quizid && quizzes && quizzes.length != 0) {
+			dispatch(initActiveQuiz({ quizId: quizid as string }));
+		}
+	}, [dispatch, quizid, quizzes]);
 
 	return (
 		<Layout>
-			<Seo title={`${quiz?.name}`} />
+			<Seo title={quiz?.name} />
 			<main className="w-full grow px-2 flex flex-col items-center ">
 				{quiz && currentActiveQuestion ? (
 					<section className="grow w-full xl:w-9/12 lg:w-10/12 flex flex-col items-center">
