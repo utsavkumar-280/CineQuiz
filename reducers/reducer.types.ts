@@ -1,10 +1,11 @@
 import { Quiz } from "../utils";
-export interface Attempts {
+
+export type Attempts = {
 	_id: string;
 	quiz: Quiz | null;
 	score: number;
-}
-export interface QuizState {
+};
+export type QuizState = {
 	quizzes: Quiz[] | null;
 	active: {
 		quiz: Quiz | null;
@@ -12,8 +13,8 @@ export interface QuizState {
 		score: number;
 	};
 	isClickEnabled: boolean;
-	previousAttempts: Attempts[] | null;
-}
+	previousAttempts: Attempts[] | [];
+};
 
 export type QuizAction =
 	| {
@@ -39,4 +40,8 @@ export type QuizAction =
 			type: "ADD_ATTEMPTED_QUIZ";
 			payload: { activeQuiz: Quiz; score: number };
 	  }
-	| { type: "CLEAR_ALL_PREVIOUS_ATTEMPTS" };
+	| { type: "CLEAR_ALL_PREVIOUS_ATTEMPTS" }
+	| {
+			type: "SET_PREVIOUS_ATTEMPTS";
+	  }
+	| { type: "RESET_QUIZ_STATE" };

@@ -1,19 +1,19 @@
-export interface Option {
+export type Option = {
 	_id: string;
 	isCorrect: boolean;
 	content: string;
-}
+};
 
-export interface Question {
+export type Question = {
 	_id: string;
 	points: number;
 	negativePoints: number;
 	question: string;
 	options: Option[];
 	selectedOptionId?: string | null;
-}
+};
 
-export interface Quiz {
+export type Quiz = {
 	_id: string;
 	name: string;
 	description: string;
@@ -21,4 +21,4 @@ export interface Quiz {
 	category: string;
 	totalScore: number;
 	questions: Question[];
-}
+};
