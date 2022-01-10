@@ -21,7 +21,6 @@ export const QuizDataProvider: FunctionComponent = ({ children }) => {
 		const response = await fetch("https://cine-insta.herokuapp.com/quizzes");
 		if (response.status === 200) {
 			const data = await response.json();
-			console.log(data);
 			dispatch(initAllQuizzes({ quizzes: data.response }));
 		}
 	};

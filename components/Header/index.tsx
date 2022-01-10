@@ -10,7 +10,7 @@ const Header = () => {
 			<nav className=" w-full flex justify-between items-center h-full ">
 				<Link href="/">
 					<a className=" text-green-400 italic text-3xl font-black  md:text-4xl">
-						CineQuiz
+						<h1>CineQuiz</h1>
 					</a>
 				</Link>
 				<Link href="/dashboard">
@@ -19,7 +19,7 @@ const Header = () => {
 							isDashboard ? "text-green-400" : "text-neutral-300"
 						}`}
 					>
-						Dashboard
+						<h2>Dashboard</h2>
 					</a>
 				</Link>
 			</nav>
