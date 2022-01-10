@@ -19,12 +19,13 @@ import {
 
 const Quiz = () => {
 	const router = useRouter();
-	const { quizID } = router.query;
+	const { quizid } = router.query;
 
 	const {
 		state: {
 			active: { quiz, questionNo, score },
 			isClickEnabled,
+			quizzes,
 		},
 		dispatch,
 	} = useQuizData();
@@ -61,10 +62,13 @@ const Quiz = () => {
 		}, 1000);
 	};
 
+	console.log({ quizid, quiz, currentActiveQuestion, quizzes });
+
 	useEffect(() => {
-		dispatch(initActiveQuiz({ quizId: quizID as string }));
-		return () => {};
-	}, [dispatch, quizID]);
+		if (quizid && quizzes && quizzes.length != 0) {
+			dispatch(initActiveQuiz({ quizId: quizid as string }));
+		}
+	}, [dispatch, quizid, quizzes]);
 
 	return (
 		<Layout>

@@ -11,7 +11,7 @@ const DashboardCard = ({ attempt }: { attempt: Attempts }) => {
 						{attempt.quiz?.name}
 					</a>
 				</Link>
-				<Link href={`/result/?attemptId=${encodeURI(attempt._id)}`}>
+				<Link href={`/result?attemptId=${encodeURI(attempt._id)}`}>
 					<a className=" text-gray-500 hover:text-green-400 transition-all ease duration-[250ms]">
 						Result
 					</a>
