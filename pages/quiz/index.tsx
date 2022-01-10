@@ -72,7 +72,7 @@ const Quiz = () => {
 
 	return (
 		<Layout>
-			<Seo title={`${quiz?.name}`} />
+			<Seo title={quiz?.name} />
 			<main className="w-full grow px-2 flex flex-col items-center ">
 				{quiz && currentActiveQuestion ? (
 					<section className="grow w-full xl:w-9/12 lg:w-10/12 flex flex-col items-center">
