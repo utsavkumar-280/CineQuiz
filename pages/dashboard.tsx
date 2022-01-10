@@ -16,7 +16,7 @@ const Dashboard = () => {
 		state: { previousAttempts },
 		dispatch,
 	} = useQuizData();
-	console.log({ previousAttempts });
+
 	useEffect(() => {
 		dispatch(resetQuizState());
 	}, [dispatch]);

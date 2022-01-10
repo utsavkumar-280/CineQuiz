@@ -23,12 +23,10 @@ export const quizReducer = (
 
 		case "INIT_ACTIVE_QUIZ":
 			const { quizId } = action.payload;
-			console.log({ quizId, state });
+
 			const selectedQuiz: Quiz = state?.quizzes?.find(
 				(quiz) => quiz?._id === quizId
 			) as Quiz;
-
-			console.log({ selectedQuiz, state });
 
 			selectedQuiz?.questions?.forEach(
 				(question) => (question.selectedOptionId = null)
@@ -133,7 +131,6 @@ export const quizReducer = (
 		case "SET_PREVIOUS_ATTEMPTS":
 			if (typeof window !== "undefined") {
 				const localDashboard = localStorage.getItem("dashboard");
-				//console.log({ localDashboard });
 
 				const { previouslyAttempted }: { previouslyAttempted: Attempts[] } =
 					localDashboard ? JSON.parse(localDashboard) : [];

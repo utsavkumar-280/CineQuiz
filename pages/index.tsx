@@ -17,10 +17,8 @@ const Home = ({ quizzes }: { quizzes: Quiz[] }) => {
 	const router = useRouter();
 	const searchedCategory = router?.query?.cat || "All";
 
-	const { state, dispatch } = useQuizData();
-	console.log({ state });
+	const { dispatch } = useQuizData();
 
-	//console.log(searchedCategory);
 	useEffect(() => {
 		dispatch(resetQuizState());
 	}, [dispatch]);
