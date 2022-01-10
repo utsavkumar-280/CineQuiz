@@ -67,7 +67,6 @@ const Quiz = () => {
 		return () => {};
 	}, [dispatch, quizID]);
 
-	console.log({ quiz, questionNo, score });
 	return (
 		<Layout>
 			<Seo title={`Quiz ${quizID}`} />

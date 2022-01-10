@@ -17,9 +17,7 @@ const Home: NextPage = () => {
 	const searchedCategory = router?.query?.cat || "All";
 
 	const { state, dispatch } = useQuizData();
-	console.log({ state });
 
-	//console.log(searchedCategory);
 	useEffect(() => {
 		dispatch(resetQuizState());
 	}, [dispatch]);
