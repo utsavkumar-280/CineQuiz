@@ -40,7 +40,6 @@ const Quiz = () => {
 			: dispatch(decScore({ score: currentActiveQuestion?.negativePoints }));
 
 		if (questionNo + 1 === quiz?.questions.length) {
-			dispatch(addAttemptedQuiz({ activeQuiz: quiz, score }));
 			router.replace("/result");
 		} else {
 			dispatch(incQuestionNo());
@@ -91,14 +90,16 @@ const Quiz = () => {
 								<h2 className="text-gray-500 ">
 									Score:{" "}
 									<span
-										className={`${score ? "text-green-400" : "text-red-500"}`}
+										className={`${
+											score >= 0 ? "text-green-400" : "text-red-500"
+										}`}
 									>
 										{score}
 									</span>
 								</h2>
 							</section>
-							<section className="w-full flex items-center justify-start xl:my-8">
-								<h1 className="text-gray-200 ">
+							<section className="w-full flex items-center justify-center xl:my-8">
+								<h1 className="text-gray-200 text-center">
 									{currentActiveQuestion?.question}
 								</h1>
 							</section>
