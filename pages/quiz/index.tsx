@@ -62,8 +62,6 @@ const Quiz = () => {
 		}, 1000);
 	};
 
-	console.log({ quizid, quiz, currentActiveQuestion, quizzes });
-
 	useEffect(() => {
 		if (quizid && quizzes && quizzes.length != 0) {
 			dispatch(initActiveQuiz({ quizId: quizid as string }));

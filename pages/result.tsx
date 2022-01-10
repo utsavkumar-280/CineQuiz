@@ -26,8 +26,6 @@ const Result = () => {
 
 	const result = attemptId ? currentAttempt : { quiz, score };
 
-	console.log({ attemptId, quiz, score, previousAttempts });
-
 	useEffect(() => {
 		if (quiz && score) {
 			dispatch(addAttemptedQuiz({ activeQuiz: quiz, score }));
