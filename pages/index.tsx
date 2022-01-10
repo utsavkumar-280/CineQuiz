@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,11 +9,20 @@ import Seo from "../components/Seo";
 import QuizCard from "../components/QuizCard";
 import { categories } from "../utils/data";
 
+import { useQuizData } from "../contexts/QuizDataProvider";
+import { resetQuizState } from "../reducers/quiz.reducer";
+
 const Home: NextPage = () => {
 	const router = useRouter();
 	const searchedCategory = router?.query?.cat || "All";
 
+	const { state, dispatch } = useQuizData();
+	console.log({ state });
+
 	//console.log(searchedCategory);
+	useEffect(() => {
+		dispatch(resetQuizState());
+	}, [dispatch]);
 	return (
 		<Layout>
 			<Seo title={`Home`} />
@@ -38,15 +48,11 @@ const Home: NextPage = () => {
 				</div>
 
 				<div className="grow px-9 flex flex-col items-center">
-					<QuizCard imgUrl={`https://i.postimg.cc/3wWYJGYb/LORings.jpg`} />
-					<QuizCard imgUrl={`https://i.postimg.cc/6QCzZjW7/GOT.jpg`} />
-					<QuizCard imgUrl={`https://i.postimg.cc/rpTZfXYG/HPotter.jpg`} />
-					<QuizCard imgUrl={`https://i.postimg.cc/y6SyQ8cc/StarWars.jpg`} />
-					<QuizCard imgUrl={`https://i.postimg.cc/8PZcLhcH/The-Office.jpg`} />
-					<QuizCard imgUrl={`https://i.postimg.cc/BbqYfWx2/Sacred-Games.jpg`} />
-					<QuizCard imgUrl={`https://i.postimg.cc/4dK21Cz5/director.jpg`} />
-					<QuizCard imgUrl={`https://i.postimg.cc/t4v41PDx/bollywood.jpg`} />
-					<QuizCard imgUrl={`https://i.postimg.cc/NFpJxgK5/amitabh.jpg`} />
+					{searchedCategory === "All"
+						? state.quizzes?.map((q) => <QuizCard quiz={q} key={q._id} />)
+						: state.quizzes
+								?.filter((quiz) => quiz.category === searchedCategory)
+								.map((q) => <QuizCard quiz={q} key={q._id} />)}
 				</div>
 			</main>
 		</Layout>
