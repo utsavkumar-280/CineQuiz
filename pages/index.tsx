@@ -1,5 +1,4 @@
-import type { NextPage } from "next";
-import Image from "next/image";
+import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -8,14 +7,22 @@ import Seo from "../components/Seo";
 import QuizCard from "../components/QuizCard";
 import { categories } from "../utils/data";
 
-const Home: NextPage = () => {
+import { useQuizData } from "../contexts/QuizDataProvider";
+import { resetQuizState } from "../reducers/quiz.reducer";
+import { Quiz } from "../utils";
+
+const Home = ({ quizzes }: { quizzes: Quiz[] }) => {
 	const router = useRouter();
 	const searchedCategory = router?.query?.cat || "All";
 
-	//console.log(searchedCategory);
+	const { dispatch } = useQuizData();
+
+	useEffect(() => {
+		dispatch(resetQuizState());
+	}, [dispatch]);
 	return (
 		<Layout>
-			<Seo title={`Home`} />
+			<Seo />
 			<main className="w-full grow flex flex-col">
 				<div className="w-full bg-themeBg h-16 flex items-center z-10 sticky top-16 sm:top-20">
 					<nav className="w-full flex justify-start sm:justify-center flex-nowrap overflow-x-auto whitespace-nowrap tracking-wide">
@@ -38,12 +45,11 @@ const Home: NextPage = () => {
 				</div>
 
 				<div className="grow px-9 flex flex-col items-center">
-					<QuizCard />
-					<QuizCard />
-					<QuizCard />
-					<QuizCard />
-					<QuizCard />
-					<QuizCard />
+					{searchedCategory === "All"
+						? quizzes?.map((q) => <QuizCard quiz={q} key={q._id} />)
+						: quizzes
+								?.filter((quiz) => quiz.category === searchedCategory)
+								.map((q) => <QuizCard quiz={q} key={q._id} />)}
 				</div>
 			</main>
 		</Layout>
@@ -51,3 +57,16 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export const getStaticProps = async () => {
+	const response = await fetch("https://cine-insta.herokuapp.com/quizzes");
+	if (response.status === 200) {
+		const data = await response.json();
+		return {
+			props: {
+				quizzes: data.response,
+			},
+			revalidate: 10,
+		};
+	}
+};
