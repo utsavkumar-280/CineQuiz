@@ -24,7 +24,9 @@ export const quizReducer = (
 		case "INIT_ACTIVE_QUIZ":
 			const { quizId } = action.payload;
 			console.log({ quizId, state });
-			const selectedQuiz = state?.quizzes?.find((quiz) => quiz?._id === quizId);
+			const selectedQuiz: Quiz = state?.quizzes?.find(
+				(quiz) => quiz?._id === quizId
+			) as Quiz;
 
 			console.log({ selectedQuiz, state });
 
