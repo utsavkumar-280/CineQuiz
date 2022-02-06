@@ -1,0 +1,1446 @@
+{
+	"success": true,
+	"response": [
+		{
+			"name": "Lord of the Rings: Test of the Trilogy",
+			"description": "How well do you know your Middle-Earth people, places and races? Trek out of the Shire and into J.R.R. Tolkien's LoTR trilogy and see if you can master the ring",
+			"coverImage": "https://i.postimg.cc/3wWYJGYb/LORings.jpg",
+			"category": "Hollywood",
+			"totalScore": 100,
+			"questions": [
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b29800",
+					"question": "Who wields the sword Orcrist in 'The Hobbit'?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b29801",
+							"content": "Thorin"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29802",
+							"content": "Gandalf"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29803",
+							"content": "Florin"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b29804",
+					"question": "The sword Sting would glow blue when who were nearby?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29805",
+							"content": "Dark Elves"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b29806",
+							"content": "Orcs"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29807",
+							"content": "Giant Spiders"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b29808",
+					"question": "The shards of the sword Narsil were taken to Rivendell and reforged into what new sword?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29809",
+							"content": "Glamdring"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b2980a",
+							"content": "Orcrist"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b2980b",
+							"content": "Anduril"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b2980c",
+					"question": "Who is the last keeper of the elven ring Narya, the Ring of Fire?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b2980d",
+							"content": "Gandalf"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b2980e",
+							"content": "Arwen"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b2980f",
+							"content": "Cirdan"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b29810",
+					"question": "Who rescues Gandalf atop the Tower Orthanc?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29811",
+							"content": "Frodo and Sam"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b29812",
+							"content": "Gwaihir"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29813",
+							"content": "Merry and Pippin"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b29814",
+					"question": "Who stabs Saruman in the beginning of the movie 'The Return of the King'?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29815",
+							"content": "Aragorn"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b29816",
+							"content": "Grima Wormtongue"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29817",
+							"content": "Gandalf"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b29818",
+					"question": "Who was the elf responsible for abandoning Dol Guldur, before Sauron moved in?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29819",
+							"content": "Mirkwood"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b2981a",
+							"content": "Legolas"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b2981b",
+							"content": "Oropher"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b2981c",
+					"question": "Who created the three Elven Rings?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b2981d",
+							"content": "Celebrimbor"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b2981e",
+							"content": "Feanor"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b2981f",
+							"content": "Earendil"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b29820",
+					"question": "How many members were there in the Fellowship of the Ring?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29821",
+							"content": "12"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b29822",
+							"content": "9"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29823",
+							"content": "5"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2ed693985425a64b29824",
+					"question": "True or false? Aragorn's childhood elven name is Estel.",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2ed693985425a64b29825",
+							"content": "False"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2ed693985425a64b29826",
+							"content": "True"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ultimate Harry Potter Quiz",
+			"description": "Test your knowledge of the entire Wizarding world; from the professors of Hogwarts, to the seven Horcruxes. Can you name them all? You may only be a muggle, but if you're a die-hard Harry Potter fan, then you'll do as well as Hermione Granger on this quiz!",
+			"coverImage": "https://i.postimg.cc/rpTZfXYG/HPotter.jpg",
+			"category": "Hollywood",
+			"totalScore": 100,
+			"questions": [
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b22",
+					"question": "Who kills Dumbledore at the end of 'The Half-Blood Prince'?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b23",
+							"content": "Snape"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b24",
+							"content": "Lucius Malfoy"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b25",
+							"content": "Draco Malfoy"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b26",
+					"question": "Who was NOT a member of the Order of the Phoenix?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b27",
+							"content": "Mad-Eye Moody"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b28",
+							"content": "Bellatrix Lestrange"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b29",
+							"content": "Sirius Black"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b2a",
+					"question": "What Hogwarts student is killed in Little Hangleton graveyard at the end of 'The Goblet of Fire'?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b2b",
+							"content": "Cedric Diggory"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b2c",
+							"content": "Draco Malfoy"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b2d",
+							"content": "Neville Longbottom"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b2e",
+					"question": "What's the only book in the Harry Potter series that doesn't feature Lord Voldemort?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b2f",
+							"content": "The Prisoner of Azkaban"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b30",
+							"content": "The Sorcerer's Stone"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b31",
+							"content": "The Deathly Hallows"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b32",
+					"question": "Who first shows Harry the diary of Tom Riddle?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b33",
+							"content": "Moaning Myrtle"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b34",
+							"content": "Nearly Headless Nick"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b35",
+							"content": "Fawkes"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b36",
+					"question": "The first Harry Potter theme park opened in 2010. Where is it?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b37",
+							"content": "Kyoto, Japan"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b38",
+							"content": "Birmingham, England"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b39",
+							"content": "Orlando, Florida"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b3a",
+					"question": "In the epilogue to 'Harry Potter and the Deathly Hallows' to whom is Harry married?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b3b",
+							"content": "Hermione Granger"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b3c",
+							"content": "Cho Chang"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b3d",
+							"content": "Ginny Weasley"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b3e",
+					"question": "In the second book, Harry discovers a diary that used to belong to a Hogwarts student named Tom Riddle. According to the diary, which Hogwarts employee is the heir of Slytherin?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b3f",
+							"content": "Hagrid"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b40",
+							"content": "McGonagall"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b41",
+							"content": "Snape"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b42",
+					"question": "In the third book, Harry nearly dies several times after thinking he's caught a glimpse of which death omen?",
+					"options": [
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b43",
+							"content": "The Grim"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b44",
+							"content": "The Werewolf"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b45",
+							"content": "The Thestral"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"_id": "61d2f281c787a90016b36b46",
+					"question": "In the fourth book, Harry finds himself infatuated with a girl for the first time. What Quidditch position did Cho Chang play?",
+					"options": [
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b47",
+							"content": "Beater"
+						},
+						{
+							"isCorrect": true,
+							"_id": "61d2f281c787a90016b36b48",
+							"content": "Seeker"
+						},
+						{
+							"isCorrect": false,
+							"_id": "61d2f281c787a90016b36b49",
+							"content": "Keeper"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ultimate Star Wars Quiz",
+			"description": "You like to call yourself a Star Wars trivia master, well this is the quiz you can prove it on. It's time to take on your fears and may the force be with you. ",
+			"coverImage": "https://i.postimg.cc/y6SyQ8cc/StarWars.jpg",
+			"category": "Hollywood",
+			"totalScore": 100,
+			"questions": [
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "In The Force Awakens, which character has Darth Vader’s damaged mask?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Kylo Ren"
+						},
+						{
+							"isCorrect": false,
+							"content": "Rey"
+						},
+						{
+							"isCorrect": false,
+							"content": "Luke Skywalker"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "While the Jedi use a number of crystal colors for their lightsabers, what color is preferred by the Sith?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Blue"
+						},
+						{
+							"isCorrect": true,
+							"content": "Red"
+						},
+						{
+							"isCorrect": false,
+							"content": "Green"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "Who destroyed the Droid Control Ship when they accidentally activated a Naboo Fighter’s Autopilot?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Anakin Skywalker"
+						},
+						{
+							"isCorrect": false,
+							"content": "Obi Wan Kenobi"
+						},
+						{
+							"isCorrect": false,
+							"content": "Jar Jar Binks"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "Where does Yoda live when he first trains Luke Skywalker?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Dagobah"
+						},
+						{
+							"isCorrect": false,
+							"content": "Tatooine"
+						},
+						{
+							"isCorrect": false,
+							"content": "Coruscant"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "While fighting his own father in the Cloud City, which hand does Luke Skywalker lose?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Left"
+						},
+						{
+							"isCorrect": true,
+							"content": "Right"
+						},
+						{
+							"isCorrect": false,
+							"content": "Both"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "Who defeats Finn in his very first lightsaber duel?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Darth Vader"
+						},
+						{
+							"isCorrect": false,
+							"content": "Darth Maul"
+						},
+						{
+							"isCorrect": true,
+							"content": "Kylo Ren"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "What is Chewbacca’s weapon of choice?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Lightsaber"
+						},
+						{
+							"isCorrect": true,
+							"content": "Bowcaster"
+						},
+						{
+							"isCorrect": false,
+							"content": "Metal club"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "What are the creatures, living on Endor, that helped the Rebel’s to defeat the second Death Star?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Ewoks"
+						},
+						{
+							"isCorrect": false,
+							"content": "Ewoks"
+						},
+						{
+							"isCorrect": false,
+							"content": "Wookies"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "What nickname does Han Solo call Luke Skywalker that drives him crazy?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Kid"
+						},
+						{
+							"isCorrect": false,
+							"content": "Skydancer"
+						},
+						{
+							"isCorrect": false,
+							"content": "Lukie"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "After Han Solo and Chewie made an opening, which X-Wing pilot blew up the Starkiller Base?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Finn"
+						},
+						{
+							"isCorrect": true,
+							"content": "Poe Dameron"
+						},
+						{
+							"isCorrect": false,
+							"content": "General Hux"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sacred Games Quiz",
+			"description": "Wanna try your show knowledge? How Well you seen the Netflix show Sacred Games?, When police officer Sartaj Singh receives an anonymous tip about the location of criminal overlord Ganesh Gaitonde, he embarks on a chase around Mumbai in what becomes a dangerous cat-and-mouse game.",
+			"coverImage": "https://i.postimg.cc/BbqYfWx2/Sacred-Games.jpg",
+			"category": "Tv Shows",
+			"totalScore": 200,
+			"questions": [
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "Who killed Ganesh Gaitonde's mother?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Isa Suleiman"
+						},
+						{
+							"isCorrect": true,
+							"content": "Ganesh Gaitonde"
+						},
+						{
+							"isCorrect": false,
+							"content": "Gaitonde's Father"
+						},
+						{
+							"isCorrect": false,
+							"content": "Bunty"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "Which character is played by Radhika Apte?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "RAW Agent Anjali Mathur"
+						},
+						{
+							"isCorrect": false,
+							"content": "Kuku"
+						},
+						{
+							"isCorrect": false,
+							"content": "Green"
+						},
+						{
+							"isCorrect": false,
+							"content": "Nida Rahim"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "Sab Mar Jayenge, Sirf_________ Bach Jayega!",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Chaturvedi"
+						},
+						{
+							"isCorrect": false,
+							"content": "Pandit"
+						},
+						{
+							"isCorrect": true,
+							"content": "Trivedi"
+						},
+						{
+							"isCorrect": false,
+							"content": "Nathu"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "Who is the lucky charm of Gaitonde?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Kuku"
+						},
+						{
+							"isCorrect": false,
+							"content": "Trivedi"
+						},
+						{
+							"isCorrect": false,
+							"content": "Bunty"
+						},
+						{
+							"isCorrect": false,
+							"content": "Kanta Bai"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "What was the color of the car Gaitonde always dreamt of owning?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Silver"
+						},
+						{
+							"isCorrect": false,
+							"content": "Golden"
+						},
+						{
+							"isCorrect": false,
+							"content": "Blue"
+						},
+						{
+							"isCorrect": true,
+							"content": "Red"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "Where was Gaitonde's first case registered?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Worli"
+						},
+						{
+							"isCorrect": false,
+							"content": "Thane"
+						},
+						{
+							"isCorrect": true,
+							"content": "Kailash Pada"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "What is a profession of the first father of Gaitonde?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Pandit"
+						},
+						{
+							"isCorrect": false,
+							"content": "Painter"
+						},
+						{
+							"isCorrect": false,
+							"content": "Bouncer"
+						},
+						{
+							"isCorrect": false,
+							"content": "Terrorist"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "Gareeb logo ki entry sirf mandir mein free hai. Who said this?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Paritosh Shah"
+						},
+						{
+							"isCorrect": true,
+							"content": "Subhadra"
+						},
+						{
+							"isCorrect": false,
+							"content": "Inspector Sartaj Singh"
+						},
+						{
+							"isCorrect": false,
+							"content": "Constable Katekar"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "______ din hai tumhare paas.",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "27"
+						},
+						{
+							"isCorrect": true,
+							"content": "25"
+						},
+						{
+							"isCorrect": false,
+							"content": "28"
+						}
+					]
+				},
+				{
+					"points": 20,
+					"negativePoints": 10,
+					"question": "Who is the director of Sacred Games?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Anurag Kashyap"
+						},
+						{
+							"isCorrect": false,
+							"content": "Neeraj Ghaywan"
+						},
+						{
+							"isCorrect": false,
+							"content": "Vikramaditya Motwane"
+						},
+						{
+							"isCorrect": true,
+							"content": "All of the above"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "The Office (US) Quiz",
+			"description": "After eight years of laughs, \"The Office\" closed its doors to the public, but were you paying attention to this mockumentary? Would your score promote you to assistant regional manager or leave you stuck at assistant to the regional manager? Wayne Gretzky and Michael Scott are telling you to take this shot! Are you ready?",
+			"coverImage": "https://i.postimg.cc/8PZcLhcH/The-Office.jpg",
+			"category": "Tv Shows",
+			"totalScore": 100,
+			"questions": [
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "What is the name of the company that acquires Dunder Mifflin?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Decovo"
+						},
+						{
+							"isCorrect": false,
+							"content": "Zonos"
+						},
+						{
+							"isCorrect": false,
+							"content": "Provean"
+						},
+						{
+							"isCorrect": true,
+							"content": "Sabre"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "What is Meredith's last name?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Palmer"
+						},
+						{
+							"isCorrect": false,
+							"content": "Vance"
+						},
+						{
+							"isCorrect": false,
+							"content": "Scott"
+						},
+						{
+							"isCorrect": false,
+							"content": "Kapoor"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "Who does Michael accidentally hit with a car, causing him to put on a 5k fun run out of guilt?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Angela Martin"
+						},
+						{
+							"isCorrect": false,
+							"content": "Oscar Martinez"
+						},
+						{
+							"isCorrect": false,
+							"content": "Phyllis Vance"
+						},
+						{
+							"isCorrect": true,
+							"content": "Meredith Palmer"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "Who complains to Toby about having to look at Oscar's toes when he wears sandals on Casual Friday?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Meredith"
+						},
+						{
+							"isCorrect": true,
+							"content": "Angela"
+						},
+						{
+							"isCorrect": false,
+							"content": "Andy"
+						},
+						{
+							"isCorrect": false,
+							"content": "Dwight"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "What is Pam's maiden name?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Youngs"
+						},
+						{
+							"isCorrect": false,
+							"content": "Schaffer"
+						},
+						{
+							"isCorrect": false,
+							"content": "Lader"
+						},
+						{
+							"isCorrect": true,
+							"content": "Beesly"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "What department does Creed Bratton work in?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Sales"
+						},
+						{
+							"isCorrect": false,
+							"content": "Accounting"
+						},
+						{
+							"isCorrect": true,
+							"content": "Quality Assurance"
+						},
+						{
+							"isCorrect": false,
+							"content": "Customer Service"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "When Pam is promoted to the sales department, who replaces her long-term at the reception desk?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Kelly Erin Hannon"
+						},
+						{
+							"isCorrect": false,
+							"content": "Kelly Kapoor"
+						},
+						{
+							"isCorrect": false,
+							"content": "Andy Bernard"
+						},
+						{
+							"isCorrect": false,
+							"content": "Creed Bratton"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "What type of produce does Schrute Farms grow?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Cabbage"
+						},
+						{
+							"isCorrect": true,
+							"content": "Beets"
+						},
+						{
+							"isCorrect": false,
+							"content": "Broccoli"
+						},
+						{
+							"isCorrect": false,
+							"content": "Green beans"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "What is the name of the action movie Michael Scott writes featuring Detective Michael Scarn?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Oceans Seventeen"
+						},
+						{
+							"isCorrect": true,
+							"content": "Threat Level Midnight"
+						},
+						{
+							"isCorrect": false,
+							"content": "Somehow I Manage"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "Who thinks he's writing a blog but in fact is just typing into a Microsoft Word doc?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Creed Bratton"
+						},
+						{
+							"isCorrect": false,
+							"content": "Ryan Howard"
+						},
+						{
+							"isCorrect": false,
+							"content": "Kevin Malone"
+						},
+						{
+							"isCorrect": false,
+							"content": "Jim Halpert"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Can You Identify these Indian Directors",
+			"description": "While actors are given much of the credit for successful films, it is the director who gives a film life. So, if you’re a film buff, then guess the names of the directors of these popular movies!",
+			"coverImage": "https://i.postimg.cc/4dK21Cz5/director.jpg",
+			"category": "Indian Cinema",
+			"totalScore": 100,
+			"questions": [
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "Gangs of Wasseypur' has now become a cult film. Who directed this classic?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Ram Gopal Varma"
+						},
+						{
+							"isCorrect": false,
+							"content": "Ashutosh Gowariker"
+						},
+						{
+							"isCorrect": true,
+							"content": "Anurag Kashyap"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "'Guru' was directed by one of the finest talents this country has ever seen. What's his name?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Mani Ratnam"
+						},
+						{
+							"isCorrect": false,
+							"content": "Yash Johar"
+						},
+						{
+							"isCorrect": false,
+							"content": "Mahesh Bhatt"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "'Gully Boy' gained a massive fan-following in a short amount of time! Who directed this film?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Farah Khan"
+						},
+						{
+							"isCorrect": false,
+							"content": "Imtiaz Ali"
+						},
+						{
+							"isCorrect": true,
+							"content": "Zoya Akhtar"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "'Dil Chahta Hai' is still a desi favourite! And the director is?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Gauri Khan"
+						},
+						{
+							"isCorrect": true,
+							"content": "Prakash Jha"
+						},
+						{
+							"isCorrect": false,
+							"content": "Andy"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "The grandness of 'Hum Dil De Chuke Sanam' can only be paralleled by other films by the same director! And he is?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Yash Chopra"
+						},
+						{
+							"isCorrect": false,
+							"content": "Rohit Shetty"
+						},
+						{
+							"isCorrect": true,
+							"content": "Sanjay Leela Bhansali"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "We can all agree that the director of '3 Idiots' has quite the sense of humor!",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Karan Johar"
+						},
+						{
+							"isCorrect": true,
+							"content": "Rajkumar Hirani"
+						},
+						{
+							"isCorrect": false,
+							"content": "Dibakar Banerjee"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "One of the best films many of us have watched. Who directed 'English Vinglish'?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Vikramaditya Motwane"
+						},
+						{
+							"isCorrect": true,
+							"content": "Gauri Shinde"
+						},
+						{
+							"isCorrect": false,
+							"content": "Mira Nair"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "This film is such a fun watch! And the director of 'Yeh Jawaani Hai Deewani' is?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Ayan Mukherji"
+						},
+						{
+							"isCorrect": false,
+							"content": "Punit Malhotra"
+						},
+						{
+							"isCorrect": false,
+							"content": "Mohit Suri"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "What a brilliantly made film 'Lipstick Under My Burkha' was! Who directed it?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Sudhir Mishra"
+						},
+						{
+							"isCorrect": true,
+							"content": "Alankrita Shrivastava"
+						},
+						{
+							"isCorrect": false,
+							"content": "Rakeysh Omprakash Mehra"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 10,
+					"question": "And finally, who directed 'Queen'?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Vikas Bahl"
+						},
+						{
+							"isCorrect": false,
+							"content": "Luv Ranjan"
+						},
+						{
+							"isCorrect": false,
+							"content": "Hansal Mehta"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Amitabh Bachchan Quiz",
+			"description": "Take this quiz if you absolutely love Amitabh Bachchan. Only die-hard fans will get it right",
+			"coverImage": "https://i.postimg.cc/NFpJxgK5/amitabh.jpg",
+			"category": "Indian Cinema",
+			"totalScore": 50,
+			"questions": [
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": " In \"Great Gambler\"Amitabh has a double role. One is called Vijay, what is the other called?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Ajay"
+						},
+						{
+							"isCorrect": false,
+							"content": "Sanjay"
+						},
+						{
+							"isCorrect": true,
+							"content": "Jai"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "In which film does Amitabh play the role of a Merchant Navy captain who becomes a coal miner?",
+					"options": [
+						{
+							"isCorrect": true,
+							"content": "Kaala Pathar"
+						},
+						{
+							"isCorrect": false,
+							"content": "Suhaag"
+						},
+						{
+							"isCorrect": false,
+							"content": "Ram Balram"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": " For which of these films did Amitabh lend his voice as a narrator?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Gandhi"
+						},
+						{
+							"isCorrect": false,
+							"content": "Aradhana"
+						},
+						{
+							"isCorrect": true,
+							"content": "Lagaan"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "In the Hollywood film \"Great Gatsby\", what is the name of his character?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "Imtiaz Khan"
+						},
+						{
+							"isCorrect": true,
+							"content": "Meyer Wolfsheim"
+						},
+						{
+							"isCorrect": false,
+							"content": "Major Bentley"
+						}
+					]
+				},
+				{
+					"points": 10,
+					"negativePoints": 5,
+					"question": "On which date was Amitabh born?",
+					"options": [
+						{
+							"isCorrect": false,
+							"content": "14 October 1943"
+						},
+						{
+							"isCorrect": false,
+							"content": "12 November 1942"
+						},
+						{
+							"isCorrect": true,
+							"content": "11 October 1942"
+						}
+					]
+				}
+			]
+		}
+	]
+}
