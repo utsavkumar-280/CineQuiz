@@ -1,4 +1,6 @@
 # CineQuiz
+![OgImage](https://user-images.githubusercontent.com/66728108/157847842-c57ae141-69e9-4b3e-8e6b-2a35be93dc8a.png)
+
 
 A quiz app for people in love with cinema. It's a react app made using the Next.js framework with TypeScript. It has a catalog of quizzes that you can play and all your attempts are stored in the dashboard inside the localStorage. It talks to a backend express server that replies with the quiz data stored in MongoDB.
 
