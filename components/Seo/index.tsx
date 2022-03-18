@@ -44,6 +44,7 @@ const Seo = ({ title }: { title?: String }) => {
 				<meta name="msapplication-TileColor" content="#00aba9" />
 				<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
 				<meta name="theme-color" content="#ffffff" />
+				<meta name="msapplication-config" content="favicon/browserconfig.xml" />
 
 				{favicons.map((linkProps) => (
 					<link key={linkProps.href} {...linkProps} />
